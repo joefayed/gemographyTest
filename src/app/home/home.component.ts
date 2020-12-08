@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Repo } from '../shared/repo';
+import { REPOS } from '../shared/repos';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  repos: Repo[] = REPOS;
+  
+
   constructor() { }
 
   ngOnInit(): void {
+      console.log(this.repos[0]);
   }
 
 }
