@@ -1,8 +1,15 @@
-<mat-list>
-    <mat-list-item class="item" *ngFor="let repo of repos">
-        <mat-icon mat-list-icon>folder</mat-icon>
-        <div mat-line>{{folder.name}}</div>
-        <div mat-line> {{folder.description | date}} </div>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-</mat-list>
+<div class="container" fxLayout="column wrap" fxLayoutGap="10px" fxLayoutGap.lt-md="0">
+    <mat-list fxFlex fxFlexAlign.gt-md="center">
+        <mat-list-item *ngFor="let repo of repos">
+            <img matListAvatar src={{repo.avatar}} alt={{repo.username}}>
+            <div mat-line> {{repo.name}} </div>
+            <div fxFlex="0 1 initial" mat-line> {{repo.description}} </div>
+            <div fxFlex="0 1 initial" mat-line fxLayout="row wrap"> 
+                <a fxFlex= "0 1 initial" class="bordered">start: {{repo.stars}}</a>
+                <a fxFlex= "0 1 initial" class="bordered">Issues: {{repo.issues}}</a>
+                <a fxFlex= "0 1 initial">submitted 30 days ago by {{repo.username}}</a>
+            </div>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+</div>

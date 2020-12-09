@@ -10,7 +10,6 @@ import { REPOS } from '../shared/repos';
 export class HomeComponent implements OnInit {
 
   repos: Repo[] = REPOS;
-  
 
   constructor() { }
 

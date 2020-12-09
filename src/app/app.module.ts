@@ -9,6 +9,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
+import {MatRippleModule} from '@angular/material/core';
+
+
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 import 'hammerjs';
@@ -29,7 +33,9 @@ import { HeaderComponent } from './header/header.component';
     MatToolbarModule,
     MatCardModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    MatRippleModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
