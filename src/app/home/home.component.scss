@@ -2,12 +2,18 @@
   color: black;
   border: 2px solid blue;
 }
+.mat-list {
+  width: 100% !important;
+}
 .bordered {
   border: 2px solid;
   border-radius: 12px;
   border-width: medium;
   text-align: center;
   margin-right: 3px;
+}
+.container {
+  border: 2px solid red;
 }
 .mat-divider {
   border-top-color: rgba(0, 0, 0, 0.25);

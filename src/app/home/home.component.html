@@ -1,15 +1,20 @@
-<div class="container" fxLayout="column wrap" fxLayoutGap="10px" fxLayoutGap.lt-md="0">
-    <mat-list fxFlex fxFlexAlign.gt-md="center">
-        <mat-list-item *ngFor="let repo of repos">
-            <img matListAvatar src={{repo.avatar}} alt={{repo.username}}>
-            <div mat-line> {{repo.name}} </div>
-            <div fxFlex="0 1 initial" mat-line> {{repo.description}} </div>
-            <div fxFlex="0 1 initial" mat-line fxLayout="row wrap"> 
-                <a fxFlex= "0 1 initial" class="bordered">start: {{repo.stars}}</a>
-                <a fxFlex= "0 1 initial" class="bordered">Issues: {{repo.issues}}</a>
-                <a fxFlex= "0 1 initial">submitted 30 days ago by {{repo.username}}</a>
-            </div>
-            <mat-divider></mat-divider>
-        </mat-list-item>
+<div class="container">
+    <mat-list>
+        <div class="flex-container" fxLayout="column wrap" fxLayoutGap="10px" fxLayoutGap.lt-md="0">
+            <mat-list-item fxFlex="1 1 auto" fxFlexFill *ngFor="let repo of repos">
+                <img matListAvatar src={{repo.avatar}} alt={{repo.username}}>
+                <div fxFlex="initial" mat-line> {{repo.name}} </div>
+                <div fxFlex="1 1 auto" mat-line> {{repo.description}} hasgdhjsaghsjdasdajhsadkjdsansdakjsadhbhajshbashjsabsdakjhdnsakjadsndsakjdnsa</div>
+                <div fxFlex="initial" mat-line class="container" fxLayout.lt-md="column wrap" fxLayout="row wrap">
+                    <a fxFlex="initial" class="bordered">start: {{repo.stars}}</a>
+                    <a fxFlex="initial" class="bordered">Issues: {{repo.issues}}</a>
+                <a fxFlex>submitted 30 days ago by submitted 30 days ago by submitted 30 days ago by submitted 30 days ago by
+                    {{repo.username}}</a>
+                <a fxFlex>submitted 30 days ago by submitted 30 days ago by submitted 30 days ago by submitted 30 days ago by
+                    {{repo.username}}</a>
+                </div>
+                <mat-divider></mat-divider>
+            </mat-list-item>
+        </div>
     </mat-list>
 </div>

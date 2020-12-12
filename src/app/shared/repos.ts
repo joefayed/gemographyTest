@@ -7,7 +7,7 @@ export const REPOS: Repo[] = [
         name: "Huffman",
         username: "Joe Fayed",
         avatar: "../assets/3f1f05f2a32fc3f8ab87341da84ccc1e.jpg",
-        description: "Small Project for Huffman Code Small Project for Huffman Code small Project for Huffman Code Small Project for Huffman Code Small Project for Huffman Code",
+        description: "Small Project for Huffman",
         stars: 300000,
         issues: 10000000
     },
